@@ -8,6 +8,7 @@ export class CalculadoraService {
   addExpr(val, atualExpr): string{
     let _return
     try{
+      if(val === "x") val = "*";
       _return = atualExpr.concat(val);
     }catch(e){
       console.log(e);

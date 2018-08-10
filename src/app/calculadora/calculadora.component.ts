@@ -12,7 +12,7 @@ export class CalculadoraComponent{
   result: number = 0
 
   nums: string[] = [ "9", "8", "7", "6", "5", "4", "3", "2", "1", "0", "." ]
-  opes: string[] = [ "/", "*", "-", "+" ]
+  opes: string[] = [ "/", "x", "-", "+" ]
 
   constructor(private calculadoraService: CalculadoraService) { }
 
