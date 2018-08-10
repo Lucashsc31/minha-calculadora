@@ -5,8 +5,8 @@
     max-width: 400px;
     max-height: 720px;
     grid-template: repeat(7, 1fr) / repeat(4, 1fr);
-    grid-template-areas: "expr expr expr expr"
-                         "result result result result"
+    grid-template-areas: "clear expr expr expr"
+                         "clear result result result"
                          "num num num ope"
                          "num num num ope"
                          "num num num ope"
@@ -22,6 +22,7 @@
     justify-items: end;
     padding: 0 15px 10px 0;
     background-color: #fff;
+    overflow: hidden;
 }
 
 .expr{
@@ -32,7 +33,7 @@
 
 .result{
     grid-area: result;
-    font-size: 60pt;
+    font-size: 50pt;
 }
 
 .num{
@@ -53,6 +54,12 @@
 
 .equal{
     grid-area: equal;
+    background: #6de3b1;
+    color: #fff;
+}
+
+.clear{
+    grid-area: clear;
     background: #6de3b1;
     color: #fff;
 }
