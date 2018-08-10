@@ -1,0 +1,45 @@
+#calculadora{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    max-width: 400px;
+    max-height: 720px;
+    grid-template: repeat(7, 1fr) / repeat(4, 1fr);
+    grid-template-areas: "expr expr expr expr"
+                         "result result result result"
+                         "num num num ope"
+                         "num num num ope"
+                         "num num num ope"
+                         "num num num ope"
+                         "equal equal equal equal";
+    
+    box-shadow: 10px 5px 10px #dcdcdc;
+}
+
+.expr{
+    grid-area: expr;
+    background-color: #fff;
+    color: #afafaf;
+}
+
+.result{
+    grid-area: result;
+    background-color: #fff;
+}
+
+.num{
+    grid-area: num;
+    background-color: #383838;
+}
+
+.ope{
+    grid-area: ope;
+    background-color: #202020;
+    color: #71eab6;
+}
+
+.equal{
+    grid-area: equal;
+    background: #71eab6;
+    color: #fff;
+}
