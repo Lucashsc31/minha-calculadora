@@ -5,8 +5,8 @@ export class CalculadoraService {
 
   constructor() { }
 
-  teste(){
-    return "Service está funcionando!!"
+  teste(conta){
+    return eval(conta)
   }
 
 }

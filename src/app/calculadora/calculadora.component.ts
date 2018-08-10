@@ -12,7 +12,7 @@ export class CalculadoraComponent{
   constructor(
     private calculadoraService: CalculadoraService
   ) { 
-    this.teste = this.calculadoraService.teste()
+    this.teste = this.calculadoraService.teste("1+2")
   }
 
 }
