@@ -8,11 +8,14 @@ import { CalculadoraService } from './calculadora.service'
   styleUrls: ['./calculadora.component.css']
 })
 export class CalculadoraComponent{
-  teste: any
+  //teste: any
+  num: string[]
+  ope: string[]
+
   constructor(
     private calculadoraService: CalculadoraService
   ) { 
-    this.teste = this.calculadoraService.teste("1+2")
+    //this.teste = this.calculadoraService.teste("1+2")
   }
 
 }
